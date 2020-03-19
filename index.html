@@ -12,9 +12,33 @@
             @keyframes spinround2 {
            50% {transform: rotateY(90deg);}
            }
-            
-
-			body {
+		   
+		   @keyframes spit {
+		  50% {transform: rotateX(90deg);}
+		   }
+		   
+		   @-webkit-keyframes blinker {  
+		from { opacity: 1.0; }
+		to { opacity: 0.0; }
+			}
+		   
+	
+		.spit {
+		animation-name: spit;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		}
+		
+		.css3-blinker {
+		 -webkit-animation-name: blinker;  
+  -webkit-animation-iteration-count: infinite;  
+  -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  -webkit-animation-duration: 2.5s; 
+}	
+		
+		
+		
+				body {
 			background-color: black;
 			font-family: Courier New;
 			color:white;
@@ -33,6 +57,9 @@
 			font-weight: bold;
 			font-size:24px;
 			text-decoration: underline;
+			animation-name: crossfade;
+			animation-duration: 3.5s;
+			animation-iteration-count: infinite;
 
 			}
 			
@@ -78,14 +105,14 @@
 	</style>
 </head>
 <div>
-<h1 style="text-align: center;">THE INFINITE WRENCH</h1>
+<h1 style="text-align: center">THE INFINITE WRENCH</h1>
 </div>
 <div>
-<h3 style="text-align: center;">and the WRENCH OF ISOLATION</h3>
+<h2 style="text-align: center;" class="spit">and the WRENCH OF ISOLATION</h2>
 </div>
 <div id="plays">30 plays</div>
 <div id="plays2">in 60 minutes</div>
-<p style="text-align: center;">sample menu for internal use only</p>
+<p style="text-align: center;" class="css3-blinker">sample menu for internal use only</p>
 <p style="text-align: center;"></p>
 </div>
 <div>
