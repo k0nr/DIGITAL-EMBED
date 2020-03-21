@@ -1,0 +1,25 @@
+Reference information for Connor and future maintainers of The Infinite Wrench goes viral.
+
+COLORS
+
+house background: #999999
+house green: #66CC6F
+wrench yellow: #FFE64D
+
+
+
+FONTS
+
+
+STRUCTURE
+
+
+Menu: /index.html
+Plays: /##-playtitle.html 
+
+Images: /images/
+This file: /the-readme
+
+GITHUB
+	Production:
+	Development: k0nr.github.io/DIGITAL-EMBED
