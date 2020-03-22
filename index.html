@@ -13,41 +13,6 @@
 
 	<style>
 
-/* Force Landscape Mode, looks like shit, don't use this method 
-        
-        #container { display:block; }
-    @media only screen and (orientation:portrait){
-    #container {
-    height: 100vw;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    }
-
-}   
-
-
-
-
-
-
-
-  #container {
-
-     -webkit-transform: rotate(0deg);
-     -moz-transform: rotate(0deg);
-     -o-transform: rotate(0deg);
-     -ms-transform: rotate(0deg);
-     transform: rotate(0deg);
-
-  }
-
-}
-
-*/
-
 /* Force Landscape Mode, the real method */
 
 #warning-message { display: none; 
@@ -94,7 +59,7 @@ font-size:30px;
 		}
 		
 
-/* Define animations */		   
+/* Define classes */		   
 	
 		.spit {
 		animation-name: spit;
@@ -106,12 +71,28 @@ font-size:30px;
 		 -webkit-animation-name: blinker;  
   -webkit-animation-iteration-count: infinite;  
   -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
-  -webkit-animation-duration: 2.5s; 
+  -webkit-animation-duration: 2.5s;
 }	
-		
+
+.youtube-responsive-container {
+position:relative;
+padding-bottom:56.25%;
+padding-top:30px;
+height:0;
+overflow:hidden;
+}
+
+.youtube-responsive-container iframe, .youtube-responsive-container object, .youtube-responsive-container embed {
+position:absolute;
+top:0;
+left:20%;
+width:60%;
+height:60%;
+}
+
 /* Styling, etc */
 				
-			 body{background: url(images/background.png); 
+            body{background: url(images/background.png); 
 			font-family: Courier New;
 			color:white;
 			}
@@ -127,7 +108,7 @@ font-size:30px;
 			font-family: monospace;
 			text-align: center;
 			font-weight: bold;
-			font-size:24px;
+			font-size:36px;
 			text-decoration: underline;
 			animation-name: crossfade;
 			animation-duration: 3.5s;
@@ -139,8 +120,13 @@ font-size:30px;
 			font-family: Courier New;
 			text-align: center;
 			font-weight: bold;
-			font-size: 20px;
+			font-size: 28px;
 			text-decoration: underline;
+			}
+			
+			h3 {
+			font-weight: bold;
+			color: #FFE64D;
 			}
 			
 			a:link {
@@ -193,6 +179,8 @@ font-size:30px;
 	color: #99c1ff;
     }
     
+    
+    
 	</style>
 </head>
 
@@ -201,7 +189,7 @@ font-size:30px;
 <body>
 <div id="warning-message">
 
-     <strong>turn yr phone ~landscape~</strong>
+     <strong>turn yr phone ~landscape~<br>or make this window bigger</strong>
 
  </div>
 
@@ -210,13 +198,24 @@ font-size:30px;
 
 <!-- Masthead -->
     
-    <div id="center-menu">
+<div id="center-menu">
         <h1>THE INFINITE WRENCH</h1>
         <h2 style="text-align: center;" class="spit">goes viral</h2>
         <div id="plays">30 digital plays</div>
         <div id="plays2">in 60 analog minutes</div>
         <p style="text-align: center;" class="css3-blinker">menu for w/e march 29,  2X20</p>
     
+    
+<!--Intro Video-->
+
+<br><br>
+<h3>&nbsp;START HERE 🖗 WATCH THIS FIRST 🖗 </h3>
+<br><br>
+
+<div class="youtube-responsive-container"><iframe src="https://www.youtube.com/embed/zUMn-oUguoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<br><br>
+
 
 <!-- List of play titles & links -->
     
@@ -253,26 +252,39 @@ font-size:30px;
 <p><a href="v11-clothdoll.html">V11. Cloth Doll: A Cautionary Tale</a></p>
 <p><a href="v12-flattening.html">V12. 37 Seconds of Flattening the Curve</a></p><p><br></p>
     <br><br>
+</div>
+    
+<!--Outro video-->
+
+<div class="youtube-responsive-container"><iframe src="https://www.youtube.com/embed/8wXfuM3yqRs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+<h3>the END!! watch this LAST ☝☝</h3>
     
 <!--Contact Us and links in corner-->
   
   
   
   <div id="contact" style="text-align: center;">
-            <br><a href="https://www.neofuturists.org" target="_blank">NEOS HOME</a> <br><br>
-            <a href="https://www.patreon.com/theneofuturists" target="_blank">&nbsp;BECOME A PATRON&nbsp;</a> <br><br>
-            <a href="mailto:engagement@neofuturists.org">CONTACT</a></ul>
-                <br><br>
+            <br><a href="https://neofuturists.secure.force.com/donate/?dfId=a0yU0000000mzshIAA">DONATE</a><br><br>
+            <a href="https://www.patreon.com/theneofuturists" target="_blank">&nbsp;BECOME A PATRON&nbsp;</a><br><br>
+             <a href="mailto:engagement@neofuturists.org">CONTACT</a><br><br>
+            <a href="https://www.neofuturists.org" target="_blank">NEOS HOME</a> <br><br>
     </div>
-   
+
+
+
+    
+    
 <!--Signature-->
    
    
-   <p style="text-align: center;">__THE NEO-FUTURISTS__CHICAGO__2020__</p>
+   <p style="display: block;" width="50%;">credits: kirsten nick jasmine trent dan connor kate diana john neil ida lily sadbrad bethany john lizi anthony andy kaitlyn devon lucy ANDYOU!!!</p>
+   <p><strong>THE NEO-FUTURISTS CHICAGO 2020</strong></p>
     <br><br>
     
     </div>
-</div>
+
 </div>
 </div>
 </body>
