@@ -9,8 +9,66 @@
 <link rel="shortcut icon" sizes="192x192" href="images/icon-192x192.png">
 <link rel="apple-touch-icon" href="images/icon-192x192.png">
 
+
+
 	<style>
+
+/* Force Landscape Mode, looks like shit, not sure what to do
         
+        #container { display:block; }
+    @media only screen and (orientation:portrait){
+    #container {
+    height: 100vw;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    }
+
+}   
+
+
+
+
+
+
+
+  #container {
+
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     -ms-transform: rotate(0deg);
+     transform: rotate(0deg);
+
+  }
+
+}
+
+*/
+
+#warning-message { display: none; 
+background-color: #66CC6F;
+color:black;
+font-size:30px;
+}
+
+@media only screen and (orientation:portrait){
+#wrapper { display:none; }
+#warning-message { display:block; }
+
+ }
+
+    @media only screen and (orientation:landscape){
+        #warning-message { display:none; }
+
+    }
+    
+    
+
+/* Define keyframes */
+
         html {
             height: 100%;
         }
@@ -31,8 +89,10 @@
 		   @-webkit-keyframes blinker {  
 		from { opacity: 1.0; }
 		to { opacity: 0.0; }
-			}
-		   
+		}
+		
+
+/* Define animations */		   
 	
 		.spit {
 		animation-name: spit;
@@ -47,7 +107,7 @@
   -webkit-animation-duration: 2.5s; 
 }	
 		
-		
+/* Styling, etc */
 				
 			 body{background: url(images/background.png); 
 			font-family: Courier New;
@@ -55,9 +115,9 @@
 			}
 			
 			p {
-			width: 40%;
+			width: 70%;
 			position: relative;
-			left: 30%;
+			left: 15%;
 			}
 			
 						
@@ -96,8 +156,7 @@
 			text-decoration: underline;
 			}
 			
-    <!--divs defined & styled here-->
-    
+/* Define & style divs */    
 			
     #linx {
 		position: relative;
@@ -135,10 +194,16 @@
 	</style>
 </head>
 
+<!--Assign force-landscape to <body>-->
+
 <body>
+<div id="warning-message">
 
+     <strong>turn yr phone ~landscape~</strong>
 
+ </div>
 
+<div id="wrapper">
 <div>
 
 <!-- Masthead -->
@@ -193,7 +258,7 @@
   
   <div id="contact" style="text-align: center;">
             <br><a href="https://www.neofuturists.org" target="_blank">NEOS HOME</a> <br><br>
-            <a href="https://www.patreon.com/theneofuturists" target="_blank">&nbsp;BECOME A PATRON</a> <br><br>
+            <a href="https://www.patreon.com/theneofuturists" target="_blank">&nbsp;BECOME A PATRON&nbsp;</a> <br><br>
             <a href="mailto:engagement@neofuturists.org">CONTACT</a></ul>
                 <br><br>
     </div>
@@ -205,6 +270,7 @@
     <br><br>
     
     </div>
+</div>
 </div>
 </div>
 </body>
