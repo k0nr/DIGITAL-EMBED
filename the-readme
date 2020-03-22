@@ -2,7 +2,7 @@ Reference information for Connor and future maintainers of The Infinite Wrench g
 
 COLORS
 
-house background: #999999
+house grey: #999999
 house green: #66CC6F
 wrench yellow: #FFE64D
 
@@ -12,8 +12,6 @@ FONTS
 
 
 STRUCTURE
-
-
 Menu: /index.html
 Plays: /##-playtitle.html 
 
