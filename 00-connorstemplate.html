@@ -4,10 +4,15 @@
 	<title>The Egg Man Cometh - The Infinite Wrench</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
+            html {
+            size:100%;
+            }
+            
 			body {
-			background-color: black;
+            background: url(images/background-dark.png); 
 			font-family: Courier New;
 			color:white;
+			
 			}
 			
 			h2 {
@@ -16,6 +21,7 @@
 			font-weight: bold;
 			font-size: 20px;
 			text-decoration: underline;
+			background-color: black;
 			}
 			
 			a:link {
@@ -45,9 +51,24 @@
 	bottom: 0;
 	right: 0;
 	width: 200px;
-	border: 3px solid #FFFFFF;
+	border: 10px solid #99c1ff;
 	text-align:center;
-	}
+	background-color: black;
+	color: #99c1ff;
+    }
+    
+    .title {
+    font-family: Courier New;
+		text-align: center;
+		font-weight: bold;
+		font-size: 20px;
+		text-decoration: underline;
+		background-color: black;  
+		position:relative;
+		width: 100%;
+		border: 10px solid black;
+    }
+    
 		
 .youtube-responsive-container {
 position:relative;
@@ -69,7 +90,7 @@ height:60%;
 	</style>
 </head>
 <body>
-	<h2>The Egg Man Cometh</h2>
+	<div class="title">The Egg Man Cometh</div>
 	<div class="youtube-responsive-container"><iframe src="https://www.youtube.com/embed/vsOYXw7d-XQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 	<div id="menu"><p><a href="index.html">back to menu</p></div>
 </body>
